@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Viewer">
+   <children>
+      <TableView fx:id="carTable" layoutX="4.0" layoutY="1.0" prefHeight="256.0" prefWidth="591.0">
+        <columns>
+          <TableColumn fx:id="RegColumn" prefWidth="125.0" text="registrationNumber" />
+          <TableColumn fx:id="ColorColumn" prefWidth="99.0" text="colour" />
+            <TableColumn fx:id="CarMakeColumn" prefWidth="72.0" text="carMake" />
+            <TableColumn fx:id="CarModelColumn" prefWidth="84.0" text="carModel" />
+            <TableColumn fx:id="YearColumn" prefWidth="68.0" text="yearMade" />
+            <TableColumn fx:id="PriceColumn" prefWidth="71.0" text="price" />
+            <TableColumn fx:id="QuantityColumn" prefWidth="71.0" text="quantity" />
+        </columns>
+      </TableView>
+      <TextField fx:id="registration" layoutX="13.0" layoutY="264.0" prefHeight="25.0" prefWidth="181.0" promptText="Registration" />
+      <TextField fx:id="carModel" layoutX="205.0" layoutY="264.0" prefHeight="25.0" prefWidth="190.0" promptText="Car Model" />
+      <TextField fx:id="carMake" layoutX="410.0" layoutY="264.0" prefHeight="25.0" prefWidth="181.0" promptText="Car Make" />
+      <Button fx:id="searchRegistration" layoutX="36.0" layoutY="300.0" mnemonicParsing="false" text="Search By Registration" />
+      <Button fx:id="searchCarMake" layoutX="439.0" layoutY="300.0" mnemonicParsing="false" text="Search By  Car Make" />
+      <Button fx:id="buyCar" layoutX="55.0" layoutY="344.0" mnemonicParsing="false" text="Buy The Car" />
+      <Button fx:id="searchCarModel" layoutX="244.0" layoutY="300.0" mnemonicParsing="false" text="Search By Car Model" />
+      <Button fx:id="logoutViewer" layoutX="472.0" layoutY="344.0" mnemonicParsing="false" text="Logout" />
+      <Button fx:id="allCarsView" layoutX="257.0" layoutY="344.0" mnemonicParsing="false" text="Show All Cars" />
+   </children>
+</AnchorPane>
